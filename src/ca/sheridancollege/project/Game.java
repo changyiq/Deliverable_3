@@ -71,27 +71,27 @@ public abstract class Game {
       boolean ComputerContinue = true;
       
       public Game(){
-          GroupOfCards.shuffle();
-          GroupOfCards.display();
+          
+          GroupOfCards gc = new GroupOfCards();
+          
+          gc.shuffle();
+          gc.display();
           
       }
-       public void calculatePlayerScore(){
-          playerScore = 0;
-          for(int i = 0; i < playerCardsList.size(); i++){
-            Card card = (Card) playerCardsList.get(i);
-            playerScore += Card.getcount();
-        }
-    }
+    
       public void playerTurn(){
            playerCardsList.add(GroupOfCards.getOneCard(n));
-           calculatePlayerScore();
+           
            if(playerScore > 21){
                palyerLose = true;
            }
            System.out.println("Player lost!");
       }
       
-      public void calculateComputerScore
+     public static void main(String[] args) {
+        
+        
+    }
    
     
 }//end class
