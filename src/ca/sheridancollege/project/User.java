@@ -33,25 +33,5 @@ public class User extends Player{
     
     public ArrayList<Cards> getHand(){
         return hand.getHand();
-    }
-    
-//    public ArrayList<Cards> initialDraw(ArrayList<Cards> cards){
-//        
-//        for(int i=0;i<2;i++){
-//            hand.setCard(cards.get(i));
-//            cards.remove(i);
-//        }   
-//        
-//        return cards;
-//    }  
-    
-//    public ArrayList<Cards> hit(ArrayList<Cards> cards){
-//        int index = (int) Math.random()*((cards.size())+1);
-//        hand.setCard(cards.get(index));
-//        cards.remove(index);
-//        
-//        return cards;
-//    
-//    }
-    
+    }    
 }
