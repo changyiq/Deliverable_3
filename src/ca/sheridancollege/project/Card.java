@@ -11,54 +11,9 @@ package ca.sheridancollege.project;
  * should remember to add themselves as a modifier.
  * @author dancye, 2018
  */
-public abstract class Card {
+public abstract class Card 
+{
     //default modifier for child classes
-    private String suit;
-    private String value;
-    private int count;
-
-    public Card(String suit, String value, int count) {
-        this.suit = suit;
-        this.value = value;
-        
-        if(value == "J" || value == "Q" || value == "K")
-        {
-            this.count = 10;
-        }
-        else if(value == "A")
-        {
-            this.count = 1;
-        }
-        else 
-        {
-            this.count = Integer.parseInt(value);
-        }
-    }
-
-    public String getSuit() {
-        return suit;
-    }
-
-    public void setSuit(String suit) {
-        this.suit = suit;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
-
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
-
     
     /**
      * Students should implement this method for their specific children classes 
@@ -67,8 +22,5 @@ public abstract class Card {
     
     @Override
     public abstract String toString();
-//        return ""suit= " + Card.getsuit() + ", value=" + Card.getvalue());
-        
+    
 }
-
-
