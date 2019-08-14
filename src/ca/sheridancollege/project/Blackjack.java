@@ -73,21 +73,6 @@ public class Blackjack extends Game{
         return cards;
     
     }
-    
-//    public ArrayList<Cards> intialDraw(ArrayList<Cards> cards){
-//    
-//        ArrayList<Cards> intialHand = new ArrayList<>();
-//        int counter = 0;
-//        
-//        while(counter<2){
-//            int random = 0 + (int)(Math.random() * ((55) + 1));
-//            intialHand.add(cards.get(random));
-//            cards.remove(random);
-//        }
-//        
-//        
-//        return intialHand;
-//    }
         
     public static void main(String[] args) {
      
