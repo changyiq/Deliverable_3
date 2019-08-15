@@ -58,6 +58,7 @@ public class Blackjack extends Game{
         playerHand = user.getHand();
          
         for(int i=0;i<2;i++){
+            System.out.println(cards.get(i));
             user.setHand(cards.get(i));
             cards.remove(i);
         }   
